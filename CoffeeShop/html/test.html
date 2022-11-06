@@ -1,0 +1,13 @@
+<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+<div id="map" style="width:100%; height:100%;"></div>
+<script>ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map("map", {
+      center: [55.751979, 37.617499],
+      zoom: 15
+    })
+}
+</script>
+<style>.ymaps-layers-pane {
+    -webkit-filter: grayscale(100%);
+}</style>
