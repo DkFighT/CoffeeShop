@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeShop</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="" id="html" onload="load_data()">
+        <header class="position_flex_center_evenly">
+            <div class="main_menu position_flex_center_evenly">
+                <a href="index.html" class="menu_butt not_active" id="home11" onclick="active_menu(this.id)">Home</a>
+                <a href="index.html" class="menu_butt not_active" id="about11" onclick="active_menu(this.id)">About</a>
+                <a href="index.html" class="menu_butt not_active" id="menu11" onclick="active_menu(this.id)">Menu</a>
+            </div>
+            <div class="logo"></div>
+            <div class="main_menu position_flex_center_evenly">
+                <a href="index.html" class="menu_butt not_active" id="order11" onclick="active_menu(this.id)">Order</a>
+                <a href="index.html" class="menu_butt not_active" id="contacts11" onclick="active_menu(this.id)">Contacts</a>
+                <!-- <a href="../html/login.html" class="menu_butt not_active"><img src="../resources/free-icon-font-user-3917559.png" alt="search"></a> -->
+                <!-- <a class="menu_butt not_active relat" id="shoping"><img src="../resources/shopping-bag.png" alt="bin"><div class="num_in_bin">0</div></a> -->
+            </div>
+        </header>
+    <div class="content gap">
+        <div class="prfile_block">
+            <div class="mesto">
+                <div class="profile_info">
+                    <div class="bg_img"></div>
+                    <div class="avatarka" id="avatarka"></div>
+                    <span class="font_size_20 user_nikname" id="nik"></span>
+                    <span class="font_size_20 user_info">Некая информация об аккаунте пользователя Некая информация об аккаунте пользователя Некая информация об аккаунте пользователя Некая информация об аккаунте пользователя Некая информация об аккаунте пользователя Некая информация об аккаунте пользователя Некая информация об аккаунте пользователя Некая информация об аккаунте пользователя</span>
+                </div>
+                <div class="all_info_history">
+                    <span class="font_size_20">History</span>
+                    <table class="font_size_20" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td>Phone</td>
+                            <td>Name</td>
+                            <td>Adress</td>
+                            <td>Oplate</td>
+                            <td>Time</td>
+                            <td>Comment</td>
+                            <td>Price</td>
+                        </tr></thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+            <div><button onclick="delete_data()">Delete data</button></div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="../js/database.js"></script>
+</body>
+</html>

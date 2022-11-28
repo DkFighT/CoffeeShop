@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeShop</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="" id="html" onload="dateView(db)">
+    <div class="head" id="home">
+        <video src="../resources/video.mp4" type="video/mp4" autoplay muted loop id="myVideoPlayer"></video>
+        <div class="grad"></div>
+        <header class="position_flex_center_evenly">
+            <div class="main_menu position_flex_center_evenly">
+                <a href="#home" class="menu_butt actives" id="home11" onclick="active_menu(this.id)">Home</a>
+                <a href="#about" class="menu_butt not_active" id="about11" onclick="active_menu(this.id)">About</a>
+                <a href="#menu" class="menu_butt not_active" id="menu11" onclick="active_menu(this.id)">Menu</a>
+            </div>
+            <div class="logo"></div>
+            <div class="main_menu position_flex_center_evenly">
+                <a href="#mapp" class="menu_butt not_active" id="order11" onclick="active_menu(this.id)">Order</a>
+                <a href="#contacnts" class="menu_butt not_active" id="contacts11" onclick="active_menu(this.id)">Contacts</a>
+                <a href="../html/login.html" class="menu_butt not_active"><img src="../resources/free-icon-font-user-3917559.png" alt="search"></a>
+                <a class="menu_butt not_active relat" id="shoping"><img src="../resources/shopping-bag.png" alt="bin"><div class="num_in_bin">0</div></a>
+            </div>
+        </header>
+        <div class="pre_content position_flex_column_between">
+            <span class="header1">Enjoy Your<br>Morning Coffee.</span>
+            <span class="header2">The coofee is brewed by fist roasting the green coffee<br>beans over hot coals in brazier. given to Opportunity</span>
+            <a href="#menu"><button>Buy Coffee</button></a>
+        </div>
+        <div class="stop_play" onclick="stopVideo()"><img src="../resources/play.png" alt="play"></div>
+    </div>
+    <div class="content">
+        <div id="about"></div>
+        <div class="process">
+            <div class="position_flex_column_between">
+                <span class="bl1">01<span class="bl2">Best Coffee Flovour</span></span>
+                <div class="img1"><img src="../resources/Rectangle 4.png" alt=""></div>
+            </div>
+            <div class="position_flex_column_between">
+                <span class="bl1">02<span class="bl2">Place to get lost</span></span>
+                <div class="img1"><img src="../resources/Rectangle 4 (1).png" alt=""></div>
+            </div>
+            <div class="position_flex_column_between">
+                <span class="bl1">03<span class="bl2">Proper roesting</span></span>
+                <div class="img1"><img src="../resources/Rectangle 4 (2).png" alt=""></div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="double_photo position_flex_column_between">
+                <img src="../resources/Rectangle 4 (1).png" alt="">
+                <img src="../resources/Rectangle 4 (2).png" alt="">
+            </div>
+            <div class="along_photo">
+                <img src="../resources/Rectangle 14.png" alt="">
+            </div>
+            <div class="history_info">
+                <div class="centering">
+                    <span class="active menu_butt">Our history</span>
+                    <span class="font_size_48">Create a<br>new story with us</span>
+                    <span class="font_size_16">mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nibh maximus, est eu, mattis nuce. preasent ut quam quis quam venen<br>atis fringilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.</span>
+                </div>
+            </div>
+        </div>
+        <div id="menu"></div>
+        <div class="menu">
+            <span class="active menu_butt">Menu</span>
+            <span class="font_size_48">Coffee popular menu</span>
+            <div class="select">
+                <div class="pos_menu">
+                    <div class="sp1" data-title="Latte is coffee with added milk and foam. The milk can be steamed or cold, while the foam is created by adding air to the milk either manually or with a machine.">
+                        <div class="img"><img src="../resources/0c30f679952317.5cd2e4d55bfa6.png" alt=""></div>
+                        <span class="font_size_20">Americano rosted gred</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$8.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+                <div class="pos_menu">
+                    <div class="sp1" data-title="Latte is coffee with added milk and foam. The milk can be steamed or cold, while the foam is created by adding air to the milk either manually or with a machine.">
+                        <div class="img"><img src="../resources/19554026988215.56365202ce5de.png" alt=""></div>
+                        <span class="font_size_20">Latte</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$12.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+                <div class="pos_menu">
+                    <div class="sp1" data-title="Capuchino is one of the most popular coffee drinks in the world. It's a luxurious and creamy coffee with a layer of foamy milk on top.">
+                        <div class="img"><img src="../resources/3-JOSba_cws47IENfA6QgbvqdQHwKnf5_OpxDfbscQv6rA.png" alt=""></div>
+                        <span class="font_size_20">Capuchino</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$12.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+                <div class="pos_menu">
+                    <div class="sp1" data-title="Looking for a great cup of coffee? Mokko! We are dedicated to providing coffee brewing equipment to help you achieve the perfect cup every time.">
+                        <div class="img"><img src="../resources/844916106109627.5f88458011448.png" alt=""></div>
+                        <span class="font_size_20">Mokko</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$10.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+                <div class="pos_menu">
+                    <div class="sp1" data-title="Raf is specialty coffee roaster based in Los Angeles. We believe that good coffee starts with quality beans, roast them with care, and serve them fresh.">
+                        <div class="img"><img src="../resources/9b7b1345899219.5840858de7815.png" alt=""></div>
+                        <span class="font_size_20">Raf</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$12.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+                <div class="pos_menu">
+                    <div class="sp1" data-title="At espresso, we take coffee seriously. Handcrafted coffee made from the highest quality beans.">
+                        <div class="img"><img src="../resources/0c30f679952317.5cd2e4d55bfa6.png" alt=""></div>
+                        <span class="font_size_20">Espresso</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$8.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+                <div class="pos_menu">
+                    <div class="sp1" data-title="A double espresso is like an espresso, but more harder.">
+                        <div class="img"><img src="../resources/3-JOSba_cws47IENfA6QgbvqdQHwKnf5_OpxDfbscQv6rA.png" alt=""></div>
+                        <span class="font_size_20">Double Esptesso</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$10.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+                <div class="pos_menu">
+                    <div class="sp1" data-title="Our cacao is the hottest on the market! Our unique growing and harvesting process results in a product that is rich in antioxidants, minerals, and nutrients.">
+                        <div class="img"><img src="../resources/9b7b1345899219.5840858de7815.png" alt=""></div>
+                        <span class="font_size_20">Cacao</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$6.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+                <div class="pos_menu">
+                    <div class="sp1" data-title="Our coffee frape is the perfect way to start your day. Made with fresh coffee and delicious Frappe mix, it's a great way to get your caffeine fix.">
+                        <div class="img"><img src="../resources/19554026988215.56365202ce5de.png" alt=""></div>
+                        <span class="font_size_20">Frape</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$12.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+                <div class="pos_menu">
+                    <div class="sp1" data-title="Berry tea is an infusion of hibiscus, rosehips, and strawberry pieces. It's fruity, tangy, and slightly sweet - perfect for enjoying a relaxing break.">
+                        <div class="img"><img src="../resources/844916106109627.5f88458011448.png" alt=""></div>
+                        <span class="font_size_20">Tea</span>
+                    </div>
+                    <div class="sp2">
+                        <span class="font_size_16">$6.00</span>
+                        <form onsubmit="return false;"><input type="button" value="-" name="btn" onclick="out.value=(out.value <= 0) ? 0 : out.value=+out.value-1;"><input type="text" disabled value="0" name="out"><input type="button" value="+" name="btn" onclick="out.value=+out.value+1"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mapp"></div>
+        <div class="map">
+            <div id="map" class="view_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15073.028185751426!2d37.62770546828184!3d55.753779736432605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5800eeae21%3A0xa52fd9d0c8a86745!2z0J_QsNGA0Log0JfQsNGA0Y_QtNGM0LU!5e0!3m2!1sru!2sru!4v1669046298358!5m2!1sru!2sru"width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="form">
+                <span class="active menu_butt">Map</span>
+                <span class="font_size_48">Place an order</span>
+                <form name="iform" class="iform" id="iform" onsubmit="return create_value(this);">
+                    <div class="input_group">
+                        <input class="font_size_20" type="email" name="mail" id="mail" required>
+                        <label>E-mail<span>*</span></label>
+                    </div>
+                    <div class="input_group">
+                        <input class="font_size_20" type="tel" name="phone" id="phone" pattern="[0-9]{1,}" required>
+                        <label>Phone-number<span>*</span></label>
+                    </div>
+                    <div class="input_group">
+                        <input class="font_size_20" type="text" name="fio" id="fio" pattern="^[А-Яа-яЁё\s]+$" required>
+                        <label>Full name(ФИО)<span>*</span></label>
+                    </div>
+                    <div class="input_group">
+                        <input class="font_size_20" type="text" name="adress" id="adress" required>
+                        <label>Adress<span>*</span></label>
+                    </div>
+                    <label id="sel"><select class="fields font_size_20" name="oplata" required onchange="createNewField()"><span>*</span></label>
+                        <option value="Картой">Картой</option>
+                        <option value="Баллами" selected>Баллами</option>
+                        <option value="Наличными">Наличными</option>
+                    </select></label>
+                    <label><select class="fields font_size_20" name="delivery">
+                        <option value="06:00 - 07:00">06:00 - 07:00</option>
+                        <option value="07:00 - 09:00">07:00 - 09:00</option>
+                        <option value="09:00 - 12:00">09:00 - 12:00</option>
+                        <option value="12:00 - 15:00">12:00 - 15:00</option>
+                        <option value="15:00 - 17:00">15:00 - 17:00</option>
+                        <option value="17:00 - 19:00">17:00 - 19:00</option>
+                    </select></label>
+                    <label class="label"><textarea class="fields font_size_20" name="comment" cols="30" rows="5" placeholder="Комментарий к заказу"></textarea></label>
+                    <button type="submit">Place an order</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="testimonial">
+                <span class="menu_butt active">Testimonial</span>
+                <span class="font_size_48">All our orders</span>
+                <div class="table">
+                    <table class="font_size_20" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td>Name</td><td>Payment method</td><td>Delivery time</td><td>Price</td>
+                        </tr></thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="place">
+                <span class="active menu_butt">Our location</span>
+                <span class="font_size_48">The best place</span>
+                <div class="uls">
+                    <ul class="font_size_20">
+                        <li>Phone: 8-999-999-99-99</li>
+                        <li>E-mail: coffeeshop@mail.ru</li>
+                        <li>Place: Near undeground</li>
+                        <li>Work time: Every day 9:00 - 19:00</li>
+                    </ul>
+                    <ul class="font_size_20">
+                        <li>VK: vk.com/coffee</li>
+                        <li>Instagram: instagram.com/coffee</li>
+                        <li>Telegram: t.me/coffee</li>
+                        <li>Twitter: twitter.com/Ilon_Mask</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacts" id="contacnts">
+                <div class="cont_info">
+                    <div class="soc">
+                        <span class="font_size_20">Follow Us</span>
+                        <a href="https://facebook.com"><img src="../resources/Path.png" alt=""></a>
+                        <a href="https://hca.twimg.com/"><img src="../resources/Vector.png" alt=""></a>
+                        <a href="https://instagram.com"><img src="../resources/Vector (1).png" alt=""></a>
+                    </div>
+                    <span class="font_size_20">Any questions? Let us know</span>
+                    <div class="faq position_flex_center_evenly">
+                        <input type="text" class="fields font_size_20" placeholder="Write your question...">
+                        <button><img src="../resources/chevron_big_right.png" alt="right"></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <dialog class="bin" id="bin">
+        <div class="bin_info">
+            <button class="X closeDialog"><img src="../resources/free-icon-font-cross-3917759.png" alt=""></button>
+            <span class="font_size_48" id="span1">Shoping Cart</span>
+            <div class="list-of-products" id="list-of-products">
+            </div>
+            <div class="total-price font_size_20" id="total-price">0$</div>
+            <a href="#mapp"><button class="btn-confirm closeDialog">Confirm</button></a>
+        </div>
+        <div class="font_size_48 empty_cart" id="empty_cart">Cart is empty</div>
+    </dialog>
+    <div class="" id="back"></div>
+
+    <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

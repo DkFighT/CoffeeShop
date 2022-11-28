@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="position_flex_center_evenly" id="header">
+        <div class="main_menu position_flex_center_evenly">
+            <a href="../html/index.html" class="menu_butt not_active" id="home11" onclick="active_menu(this.id)">Home</a>
+            <a href="../html/index.html" class="menu_butt not_active" id="about11" onclick="active_menu(this.id)">About</a>
+            <a href="../html/index.html" class="menu_butt not_active" id="menu11" onclick="active_menu(this.id)">Menu</a>
+        </div>
+        <div class="logo"></div>
+        <div class="main_menu position_flex_center_evenly">
+            <a href="../html/index.html" class="menu_butt not_active" id="order11" onclick="active_menu(this.id)">Order</a>
+            <a href="../html/index.html" class="menu_butt not_active" id="contacts11" onclick="active_menu(this.id)">Contacts</a>
+            <!-- <a href="../html/login.html" class="menu_butt not_active"><img src="../resources/free-icon-font-user-3917559.png" alt="search"></a> -->
+            <!-- <a class="menu_butt not_active relat" id="shoping"><img src="../resources/shopping-bag.png" alt="bin"><div class="num_in_bin">0</div></a> -->
+        </div>
+    </header>
+    <div class="content centering_text" id="content">
+        <span class="font_size_48">Login</span>
+        <div style="width: 35%;" id="main">
+            <div style="width: 100%;" id="login_content">
+                <form onsubmit="return sign_in()" name="login_form" style="width: 100%;">
+                    <p class="font_size_20">E-mail</p><br>
+                    <input type="email" placeholder="E-mail" required name="nikname" class="fields font_size_20"><br><br>
+                    <p class="font_size_20">Password</p><br>
+                    <input type="text" placeholder="Password" required name="first" class="fields font_size_20">
+                    <br><br>
+                    <button id="login" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <button class="no_acc" id="login_reg" onclick="registre()">No account? Registration</button>
+    </div>
+
+    <script type="text/javascript" src="../js/reg.js"></script>
+</body>
+</html>

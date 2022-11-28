@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Thx</title>
+</head>
+<body>
+    <div class="main_page">
+        <div class="welcom_word">
+            <span class="font_size_48">Thanks for registration</span>
+        </div>
+        <div id="second" class="font_size_48">3</div>
+    </div>
+    <script>
+        let param = (new URL(document.location)).searchParams;
+        var seconds = 3;
+        function t()
+        {
+            seconds -= 1;
+            document.getElementById('second').innerHTML = seconds;
+        }
+        let timer = setInterval(t, 1000);
+        setTimeout(() => { clearInterval(timer); window.location.replace(`profile.html?email=${param.get('email')}`); }, 3000);
+    </script>
+</body>
+</html>
